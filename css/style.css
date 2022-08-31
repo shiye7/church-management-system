@@ -1,0 +1,1014 @@
+*{
+    font-family: 'Courier New', Courier, monospace, serif;
+}
+
+body{
+    background-image:url('../images/church.png');
+    background-repeat: no-repeat;
+    background-position: -13vw ;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    animation: transitionIn 0.75s;
+}
+
+.login-form{
+    animation: transitionIn 0.75s;
+}
+
+.form-sign-up{
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.scroll-nav{
+    animation: transitionIn 0.75s;
+}
+
+/* ALL PAGES*/
+/* ALL PAGES*/
+/* ALL PAGES*/
+
+.scroll-up{
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    font-size: 50px;
+}
+
+.scroll-up > a > img{
+    height: 2vw;
+    background-color: rgb(231, 229, 229);
+    border-radius: 10%;
+    padding: 5px;
+}
+
+ul.scroll-nav{
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+ul.scroll-nav > li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 75px;
+    padding-bottom: 5px;
+}
+
+.scroll-nav li a{
+    position:relative;
+}
+
+.scroll-nav li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: rgb(56, 131, 179);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid rgb(56, 131, 179);
+
+}
+.scroll-nav li a:hover::before{
+   width: 100%;
+   -webkit-text-stroke: 1px rgb(56, 131, 179);
+}
+
+ul.scroll-nav a:visited,
+ul.scroll-nav a:link,
+ul.scroll-nav a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header > div{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+
+}
+
+.aligner{
+    text-align: center;
+}
+
+.navbar ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 30px;
+    margin: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(3, 2, 2);
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    position:relative;
+    -webkit-text-stroke: 1px black;
+}
+.navbar ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: rgb(56, 131, 179);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid rgb(56, 131, 179);
+
+}
+.navbar ul li a:hover::before{
+   width: 100%;
+   -webkit-text-stroke: 1px rgb(56, 131, 179);
+}
+
+.aligner .current{
+    color: rgb(56, 131, 179);
+    border-radius: 50%;
+}
+
+.hide{
+    display: none !important;
+}
+
+.invisible{
+    opacity: 0;
+}
+    
+
+
+/* HOME PAGE */
+/* HOME PAGE */
+/* HOME PAGE */
+
+.logo{
+    padding: 15px;
+    border-radius: 50%;
+    height: 65px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.bird{
+    height: 90px;
+}
+
+img.reverse{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+.header{
+    padding: 3px 0;
+    color: rgb(242, 234, 234);
+    font-size: 40px;
+    background-color: rgba(51, 49, 49, 0.95);
+    border-image-repeat: no-repeat;
+    user-select: none; 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.peace{
+    text-align: center;
+    font-size: 45px;
+    user-select: none;
+    font-weight: bold;
+    padding-bottom: 60px;
+    padding-top: 10px;
+}
+
+
+.para{
+    text-align: center;
+    font-size: 25px;
+    user-select: none;
+    margin: 40px;
+} 
+
+.explore-now:hover {
+    background-color: rgb(51, 49, 49);
+    color: white;
+  }
+
+.container{
+    text-align: center;
+}
+
+.controls {
+    display: block;
+    margin-top: 320px;
+    margin-bottom:150px;
+}
+
+.button{
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(3, 2, 2);
+    color: rgb(238, 238, 238);
+    padding: 12px 28px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgb(3, 3, 3);
+}
+
+.button:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(51, 49, 49);
+    color: white;
+}
+
+
+
+/* SERVICES PAGE */
+/* SERVICES PAGE */
+/* SERVICES PAGE */
+
+#services{
+    background-color: rgba(51, 49, 49);
+    box-shadow: 0 0 20px 0 rgb(3 3 3);
+    color: #fff;
+}
+
+.para{
+    margin-bottom: -220px;
+}
+
+.para > p{
+    margin-top: -45px;
+    font-weight: bold;
+    font-size: 25px;
+    user-select: none;
+}
+
+#services > .container{
+    padding-top: 215px;
+    padding-left: 215px;
+    padding-right: 220px;
+    padding-bottom: 1px;
+}
+
+.card img{
+    height: 160px;
+    width: 360px;
+    border-radius: 10px;
+    filter: brightness(60%); 
+}
+
+.card span{   
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+} 
+
+.card{
+    position: relative;
+}
+
+.card .picture{
+    position: relative;
+    height: 160px;
+    width: 360px;
+}
+
+/* DONATE PAGE */
+/* DONATE PAGE */
+/* DONATE PAGE */
+
+#donate{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../images/give.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container-offering{
+    margin-top: 250px;
+    display: inline-block;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.donate > h3{   
+    margin-top: -10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+img.qr{
+    padding-bottom: 20px;
+    width: 200px;
+}
+
+img.gcash{
+    width: 50px;
+    display: block;
+    margin: auto; 
+}
+
+.verse{
+    background-color: rgba(51, 49, 49);
+    box-shadow: 0 0 20px 0 rgb(3 3 3);
+    color: #fff;
+    text-align: center;
+}
+
+.verse > p{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+/* LOGIN PAGE */
+/* LOGIN PAGE */
+/* LOGIN PAGE */
+
+
+
+.text-login{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+}
+
+.login-form{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 #999;
+    margin-top: 130px;
+    width: 350px;   
+    padding: 20px 40px;
+    position: relative;
+}
+
+.login .button{
+    width: 200px;
+}
+
+.login-form > input{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.container-checkbox{
+    color: #fff;
+    font-size: 14px;
+    margin:10px 0px;
+    position: relative;
+    text-align: left;
+}
+
+.container-checkbox > input{
+    vertical-align: middle;
+}
+
+.forgot-link{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    margin-right: 2px;
+}
+
+
+.login-btn:hover {
+    background-color: rgb(51, 49, 49);
+    color: white;
+  }
+
+.login-connect-text{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    user-select: none;
+    margin: 10px 0 ;
+  }
+
+.login-connect-text:before{
+    background-color: white;
+    display: inline-block;
+    width: 75px;
+    height: 1px;
+    content: "";
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+.login-connect-text:after{
+    background-color: white;
+    display: inline-block;
+    width: 75px;
+    height: 1px;
+    content: "";
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+.external-links{
+    margin: 20px 0;
+}
+
+.external-links > img{
+    height: 50px;
+    border-radius: 20%;
+}
+
+.account-text{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    user-select: none;
+  }
+
+a.link:visited, a.link:link, a.link:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SIGN UP PAGE */
+/* SIGN UP PAGE */
+/* SIGN UP PAGE */
+  
+.title-sign{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+}
+
+.form-sign-up{
+    margin-top: 70px;
+    display: inline-block;
+    padding: 40px 0px;
+    max-width: 90%;
+    width: 651px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 rgb(32, 32, 32);
+    max-width: 90%;
+}
+
+.input-box-sign{
+    width: 260px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+.sign-up{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* FORGOT PASSWORD PAGE */
+/* FORGOT PASSWORD PAGE */
+/* FORGOT PASSWORD PAGE */
+  
+.forgot-form{
+    position: absolute;
+    width: 350px;
+    height: 45%;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 #999;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forgot-title{
+    position: absolute;
+    top: 12%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.forgot-btn{
+    position: absolute;
+    width: 150px;
+    top: 75%;
+    left: 28%;
+    cursor: pointer;
+    background-color: rgb(3, 2, 2);
+    color: rgb(238, 238, 238);
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forgot-text{
+    position: absolute;
+    top: 93%;
+    left: 25%;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    user-select: none;
+}
+
+
+/* ABOUT US PAGE*/
+/* ABOUT US PAGE*/
+/* ABOUT US PAGE*/
+
+iframe{
+    display: inline-block;
+    margin: 100px 50px;
+    width: 90vw;
+    height: 500px;
+    max-width: 90%;
+}
+
+
+.bg2{
+    background-image: url(https://www.churchofscotland.org.uk/__data/assets/image/0014/80024/Sunday-prayer-25-April.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title > span{
+    padding: 5px;
+    box-shadow: 0 0 20px 0 rgb(80, 80, 80);
+    border-radius: 15px;
+}
+
+.title{
+    margin-top: 130px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    user-select: none;
+}
+
+
+.about{
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(215, 215, 215);
+    user-select: none;
+}
+
+.about > h4{
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    color:  rgb(26, 25, 25);
+}
+
+.about > p{
+    font-size: 30px;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5s;
+    background-color: rgba(51, 49, 49);
+    box-shadow: 0 0 20px 0 rgb(3 3 3);
+    padding: 20px;
+    margin: 0;
+}
+
+/* SERVICES PAGE */
+/* SERVICES PAGE */
+/* SERVICES PAGE */
+
+#events{
+    padding-top: 100px;
+}
+
+.title-events{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    user-select: none;
+}
+
+.event{
+    display: inline-block;
+}
+
+.event + .event{
+    margin-left: 230px;
+}
+
+.event > h4{
+    margin-bottom: 15px;
+    min-width: 250px;
+    padding: 1px;
+    box-shadow: 0 0 20px 0 rgb(80 80 80);
+    border-radius: 15px;
+    font-size: 30px;
+    color: rgba(0,0,0);
+    font-weight: bold;
+    box-shadow:  0 0 20px 0 rgb(3, 3, 3);
+    border-radius: 15px;
+}
+
+.event img{
+    display: inline-block;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 10px;
+    box-shadow:  0 0 20px 0 rgb(58, 58, 57);
+}
+
+
+/* HOUSE CLIENT DETAILS PAGE */
+/* HOUSE CLIENT DETAILS PAGE */
+/* HOUSE CLIENT DETAILS PAGE */
+
+.title-house{
+    margin-top: 25px ;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    white-space: nowrap;
+}
+.other > input{
+    display: inline-block;
+}
+
+.house{
+    margin-top: 150px;
+}
+
+.house-client-form{
+    display: inline-block;
+    width: 650px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 rgb(0 0 0);
+    padding: 40px 0px;
+    max-width: 90%;
+}
+
+.input-box-fullname{
+    width: 260px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+.input-box-house{
+    width: 260px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+
+.container > button{
+    margin-top: 40px;
+    border-radius: 15px;
+    border: 0;
+}
+
+/* BAPTISM PAGE */
+/* BAPTISM PAGE */
+/* BAPTISM PAGE */
+
+.title-baptism{
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    white-space: nowrap;
+}
+
+.baptism-client-form{
+    margin-top: 130px;
+    display: inline-block;
+    width: 650px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    padding: 40px 0px;
+    max-width: 90%;
+}
+
+.input-box-baptism{
+    display: inline-block;
+    top: 55px;
+    width: 260px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+.upload-img{
+    height: 18px;   
+    cursor: pointer;
+    margin-bottom: -3px;
+    margin-right: 8px;
+}
+
+.baptism button {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgb(3, 2, 2);
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    min-width: 220px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+
+/* WEDDING PAGE */
+/* WEDDING PAGE */
+/* WEDDING PAGE */
+
+.title-wedding{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    white-space: nowrap;
+}
+
+.wedding{
+    margin-top: 150px;
+}
+
+.wedding-appointment-form{
+    display: inline-block;
+    width: 650px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    padding: 40px 0px;
+    max-width: 90%;
+
+}
+
+.input-box-wedding{
+    width: 260px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+/* COMMUNION PAGE */
+/* COMMUNION PAGE */
+/* COMMUNION PAGE */
+
+.title-communion{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    white-space: nowrap;
+}
+
+.communion-client-form{
+    display: inline-block;
+    width: 650px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    padding: 40px 0px;
+    max-width: 90%;
+    margin-top: 130px;
+}
+
+.input-box-communion{
+    position: relative;
+    width: 260px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+
+
+/* FUNERAL PAGE */
+/* FUNERAL PAGE */
+/* FUNERAL PAGE */
+
+
+.title-funeral{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+
+.funeral{
+    margin-top: 100px;
+}
+
+.funeral-client-form{
+    display: inline-block;
+    width: 650px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    padding: 40px 0px;
+    max-width: 90%;;
+}
+
+.upload{
+    margin-bottom: 30px;
+}
+
+.upload > .button{
+    min-width: 230px;
+}   
+
+.input-box-funeral{
+    display: inline-block;
+    min-width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+.set-appointment-funeral-btn{
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(3, 2, 2);
+    color: rgb(238, 238, 238);
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+
+/* SCHEDULE PAGE */
+/* SCHEDULE PAGE */
+/* SCHEDULE PAGE */
+
+#schedule{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container-schedule{
+    margin-top: 75px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: inline-block;
+}
+
+.calendar img{
+    min-width: 500px;
+    width: 55vw;
+    column-gap: 20px;
+
+}
+
+.container-form{
+    vertical-align: top;
+    display: inline-block;
+    height: 400px;
+    width: 300px;
+    background-color: rgba(35, 35, 35, 0.6);
+    box-shadow:  0 0 20px 0 rgb(3, 3, 3);   
+    margin-left: 10px;  
+    margin-top: 150px;
+    text-align: left;
+}
+
+.dates > h4{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.events .month{
+    color: rgb(0,0,0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.events { 
+    padding-left: 20px;
+    font-weight: bold;
+    color: rgb(242, 234, 234);
+    font-size: 18px;
+}
+
+.events > span{
+    margin-left: 30px;
+    display: list-item;
+    list-style-type: square;
+}
+
+@media only screen and (max-width: 768px) {
+    .header > span{
+        display: none;
+    }
+    iframe{
+        margin: 100px 0px;
+    }
+    
+}

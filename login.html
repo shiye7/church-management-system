@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+        <span>CHURCH MANAGEMENT SYSTEM</span>
+    </div>
+    <div class="container login">
+        <form class="login-form">
+
+            <div class="text-login" id="text-login">
+                LOGIN
+            </div>
+
+            <input id="txtUname" type="text" autocomplete="off" placeholder="Username" required />
+            <input id="txtPass" type="password" placeholder="Password" required />
+
+            <div class="container-checkbox">
+                <input type="checkbox">Remember me
+                <a href="forgot-pass.html" class="forgot-link">Forgot Password</a>
+            </div>
+
+            <div>
+                <button type="submit" class="button" id="btn-login">Login</button>
+            </div>
+
+            <div class="login-connect-text">or connect with</div>
+
+            <div class="external-links">
+                <img src="images/fb-logo.png" class="fb-logo" id="fb-logo">
+                <img src="images/google-logo.png" class="google-logo" id="google-logo">
+            </div>
+
+            <div class="account-text">Don't have account?
+                <span id="toSignUp">Sign up</span>
+            </div>
+        </form>
+
+        <div class="form-sign-up hide">
+            <div class="title-sign">SIGN UP</div>
+            <input type="text" class="input-box-sign" placeholder="Fullname" required>
+            <input type="text" class="input-box-sign" placeholder="Username" required>
+            <br>
+            <input type="email" class="input-box-sign" placeholder="Email" required>
+            <input type="password" class="input-box-sign" placeholder="Password">
+            <br>
+            <input type="text" class="input-box-sign" placeholder="Contact Number" required>
+            <input type="password" class="input-box-sign" placeholder="Confirm Password">
+
+            <div class="sign-up">
+                <button type="submit" class="button">Sign up</button>
+            </div>
+            <div class="login-connect-text">or connect with</div>
+
+            <div class="external-links">
+                <img src="images/fb-logo.png" class="fb-logo" id="fb-logo">
+                <img src="images/google-logo.png" class="google-logo" id="google-logo">
+            </div>
+            <div class="account-text">have an account?
+                <span id="toLogin"> Login</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

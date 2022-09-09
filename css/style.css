@@ -4,9 +4,10 @@
 
 body{
     background-image:url('../images/church.png');
-    background-repeat: no-repeat;
-    background-position: -13vw ;
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -28,6 +29,11 @@ body{
     animation: transitionIn 0.75s;
 }
 
+.verseOne{
+    animation: transitionIn 1.25s;
+}
+
+
 
 @keyframes transitionIn {
     from{
@@ -38,19 +44,18 @@ body{
     }
 }
 
+.transition{
+    animation: height-max 1s;
+}
+
 @keyframes height-max {
     0% {
-      max-height: 0;
+        max-height: 0;
     }
-  
     100% {
-      max-height: 15em;
+        max-height: 15em;
     }
   }
-
-.transition{
-    animation: height-max 1.5s;
-}
 
 /* ALL PAGES*/
 /* ALL PAGES*/
@@ -75,6 +80,7 @@ ul.scroll-nav{
     font-size: 20px;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 ul.scroll-nav > li{
@@ -91,16 +97,16 @@ ul.scroll-nav > li{
 .scroll-nav li a::before{
     content: attr(data-text);
     position: absolute;
-    color: rgb(56, 131, 179);
+    color: rgb(216, 160, 16);
     width: 0;
     overflow: hidden;
     transition: 1s;
-    border-right: 3px solid rgb(56, 131, 179);
+    border-right: 3px solid rgb(216, 160, 16);
 
 }
 .scroll-nav li a:hover::before{
    width: 100%;
-   -webkit-text-stroke: 1px rgb(56, 131, 179);
+   -webkit-text-stroke: 1px rgb(216, 160, 16);
 }
 
 ul.scroll-nav a:visited,
@@ -110,11 +116,27 @@ ul.scroll-nav a:hover{
     color: #fff;
 }
 
+ul.scroll-nav a.current:visited,
+ul.scroll-nav a.current:link,
+ul.scroll-nav a.current:hover{
+    color: rgb(194, 173, 56);
+    -webkit-text-stroke: 1px rgb(216, 160, 16);
+    cursor: default;
+}
+
+ul.nav a.current:visited,
+ul.nav a.current:link,
+ul.nav a.current:hover{
+    color: rgb(27, 95, 136);
+    -webkit-text-stroke: 1px rgb(27, 95, 136);
+    cursor: default;
+}
+
+
 .header > div{
     display: inline-block;
     vertical-align: top;
     margin-top: 25px;
-
 }
 
 .aligner{
@@ -148,21 +170,16 @@ ul.scroll-nav a:hover{
 .navbar ul li a::before{
     content: attr(data-text);
     position: absolute;
-    color: rgb(56, 131, 179);
+    color: rgb(27, 95, 136);;
     width: 0;
     overflow: hidden;
     transition: 1s;
-    border-right: 3px solid rgb(56, 131, 179);
+    border-right: 3px solid rgb(27, 95, 136);;
 
 }
 .navbar ul li a:hover::before{
    width: 100%;
-   -webkit-text-stroke: 1px rgb(56, 131, 179);
-}
-
-.aligner .current{
-    color: rgb(56, 131, 179);
-    border-radius: 50%;
+   -webkit-text-stroke: 1px rgb(27, 95, 136);;
 }
 
 .hide{
@@ -601,14 +618,15 @@ iframe{
 }
 
 
-.bg2{
+/* .bg2{
     background-image: url(https://www.churchofscotland.org.uk/__data/assets/image/0014/80024/Sunday-prayer-25-April.jpg);
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
+
 .title > span{
     padding: 5px;
     box-shadow: 0 0 20px 0 rgb(80, 80, 80);
@@ -643,10 +661,9 @@ iframe{
 }
 
 .about > p{
-    font-size: 30px;
+    font-size: 25px;
     text-align: justify;
     text-indent: 2em;
-    line-height: 1.5s;
     background-color: rgba(51, 49, 49);
     box-shadow: 0 0 20px 0 rgb(3 3 3);
     padding: 20px;
@@ -658,7 +675,14 @@ iframe{
 /* SERVICES PAGE */
 
 #events{
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../images/events.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title-events{
@@ -683,16 +707,16 @@ iframe{
     box-shadow: 0 0 20px 0 rgb(80 80 80);
     border-radius: 15px;
     font-size: 30px;
-    color: rgba(0,0,0);
     font-weight: bold;
+    color: rgb(0,0,0);
     box-shadow:  0 0 20px 0 rgb(3, 3, 3);
     border-radius: 15px;
 }
 
 .event img{
     display: inline-block;
-    height: 10vw;
-    width: 10vw;
+    height: 170px;
+    width: 170px;
     border-radius: 10px;
     box-shadow:  0 0 20px 0 rgb(58, 58, 57);
 }
@@ -966,6 +990,7 @@ iframe{
 #schedule{
     margin-top: 50px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .container-schedule{

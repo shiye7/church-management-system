@@ -14,19 +14,65 @@ function onLinkClick(e) {
     left: 0,
     behavior: "smooth",
   });
-
-
 }
+
+function updateNav(y) {
+  const services = $('#services');
+  const nav = $('.nav a.current');
+  const scrollNav = $('.scroll-nav a.current');
+  nav.removeClass('current');
+  scrollNav.removeClass('current');
+  if (services.position()?.top - 200 > y) {
+    //HOME
+    const nav = $('a[href = "#home"]');
+    nav.addClass('current');
+    return;
+  }
+  const donate = $('#donate');
+  if (donate.position()?.top - 200 > y) {
+    //SERVICES
+    const nav = $('a[href = "#services"]');
+    nav.addClass('current');
+    return;
+  }
+  const schedule = $('#schedule');
+  if (schedule.position()?.top - 200 > y) {
+    //DONATE
+    const nav = $('a[href = "#donate"]');
+    nav.addClass('current');
+    return;
+  }
+  const events = $('#events');
+  if (events.position()?.top - 200 > y) {
+    //SCHEDULE
+    const nav = $('a[href = "#schedule"]');
+    nav.addClass('current');
+    return;
+  }
+  const about = $('#about');
+  if (about.position()?.top - 200 > y) {
+    //EVENTS
+    const nav = $('a[href = "#events"]');
+    nav.addClass('current');
+  } else {
+    //ABOUT
+    const nav = $('a[href = "#about"]');
+    nav.addClass('current');
+  }
+}
+
 function onLoad() {
   const body = $(window);
   const nav = $('.scroll-nav');
   const mainNav = $('.navbar');
-  const verse = $('.verse');
+  const verseZero = $('.verseZero');
+  const verseOne = $('.verseOne');
 
   body.scroll((val) => {
     const scrollVal = $(this).scrollTop();
     const up = $('.scroll-up');
-    console.log(scrollVal);
+    // console.log(scrollVal); // VIEW SCROLL VALUE
+    updateNav(scrollVal);
     if (scrollVal > 69) {
       if (up.hasClass('hide')) {
         up.removeClass('hide');
@@ -45,23 +91,32 @@ function onLoad() {
       if (!nav.hasClass('hide')) {
         nav.addClass('hide');
       }
+      if (!nav.hasClass('transition')) {
+        nav.addClass('transition');
+      }
       if (mainNav.hasClass('invisible')) {
         mainNav.removeClass('invisible');
       }
-      if (peace.hasClass('transition')) {
-        peace.removeClass('transition');
-      }
-    };
+    }
 
-    
-    if (scrollVal > 1220) {
-      if (!verse.hasClass('transition')) {
-        verse.addClass('transition');
+    if (scrollVal > 1250) {
+      if (!verseZero.hasClass('verseOne')) {
+        verseZero.addClass('verseOne');
+      }
+    } else if (scrollVal <= 1250) {
+      if (verseZero.hasClass('verseOne')) {
+        verseZero.removeClass('verseOne');
       }
     }
-    else if (scrollVal <= 1220) {
-      if (verse.hasClass('transition')) {
-        verse.removeClass('transition');
+
+    if (scrollVal > 2013) {
+      if (!verseOne.hasClass('verseOne')) {
+        verseOne.addClass('verseOne');
+      }
+    }
+    else if (scrollVal <= 2013) {
+      if (verseOne.hasClass('verseOne')) {
+        verseOne.removeClass('verseOne');
       }
     }
   });

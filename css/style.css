@@ -25,10 +25,6 @@ body{
     animation: transitionIn 0.75s;
 }
 
-.scroll-nav{
-    animation: transitionIn 0.75s;
-}
-
 .verseOne{
     animation: transitionIn 1.25s;
 }
@@ -70,31 +66,35 @@ body{
 
 .scroll-up > a > img{
     height: 2vw;
-    background-color: rgb(231, 229, 229);
+    background-color: rgba(231, 229, 229, 0.25);
     border-radius: 10%;
     padding: 5px;
 }
 
-ul.scroll-nav{
+div.scroll-nav{
+    text-align: center;
+}
+
+ul.top-nav{
     list-style: none;
     font-size: 20px;
     padding: 0;
     margin: 0;
     overflow: hidden;
-}
-
-ul.scroll-nav > li{
     display: inline-block;
-    margin-top: 20px;
-    margin-left: 75px;
-    padding-bottom: 5px;
 }
 
-.scroll-nav li a{
+ul.top-nav > li{
+    display: inline-block;
+    padding: 0 30px;
+    margin: 0 10px;
+}
+
+.top-nav li a{
     position:relative;
 }
 
-.scroll-nav li a::before{
+.top-nav li a::before{
     content: attr(data-text);
     position: absolute;
     color: rgb(216, 160, 16);
@@ -102,23 +102,23 @@ ul.scroll-nav > li{
     overflow: hidden;
     transition: 1s;
     border-right: 3px solid rgb(216, 160, 16);
-
 }
-.scroll-nav li a:hover::before{
+
+.top-nav li a:hover::before{
    width: 100%;
    -webkit-text-stroke: 1px rgb(216, 160, 16);
 }
 
-ul.scroll-nav a:visited,
-ul.scroll-nav a:link,
-ul.scroll-nav a:hover{
+ul.top-nav a:visited,
+ul.top-nav a:link,
+ul.top-nav a:hover{
     text-decoration: none;
     color: #fff;
 }
 
-ul.scroll-nav a.current:visited,
-ul.scroll-nav a.current:link,
-ul.scroll-nav a.current:hover{
+ul.top-nav a.current:visited,
+ul.top-nav a.current:link,
+ul.top-nav a.current:hover{
     color: rgb(194, 173, 56);
     -webkit-text-stroke: 1px rgb(216, 160, 16);
     cursor: default;
@@ -133,13 +133,12 @@ ul.nav a.current:hover{
 }
 
 
-.header > div{
+.header > div > *{
     display: inline-block;
-    vertical-align: top;
-    margin-top: 25px;
+    vertical-align: middle;
 }
 
-.aligner{
+.home-nav{
     text-align: center;
 }
 
@@ -288,6 +287,11 @@ img.reverse{
     color: #fff;
 }
 
+#services .peace{
+    padding-top: 50px;
+    font-size: 40px;
+}
+
 .para{
     margin-bottom: -220px;
 }
@@ -300,10 +304,10 @@ img.reverse{
 }
 
 #services > .container{
-    padding-top: 215px;
+    padding-top: 300px;
     padding-left: 215px;
     padding-right: 220px;
-    padding-bottom: 1px;
+    padding-bottom: 50px;
 }
 
 .card img{

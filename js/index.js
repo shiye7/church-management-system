@@ -73,7 +73,7 @@ function onLoad() {
     const up = $('.scroll-up');
     // console.log(scrollVal); // VIEW SCROLL VALUE
     updateNav(scrollVal);
-    if (scrollVal > 69) {
+    if (scrollVal > 65) {
       if (up.hasClass('hide')) {
         up.removeClass('hide');
       }
@@ -84,7 +84,7 @@ function onLoad() {
         mainNav.addClass('invisible');
       }
 
-    } else if (scrollVal <= 69) {
+    } else if (scrollVal <= 65) {
       if (!up.hasClass('hide')) {
         up.addClass('hide');
       }
